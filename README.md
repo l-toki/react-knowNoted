@@ -31,6 +31,9 @@
 #### ！需要自己建设后端接口
 
 ### 接口文档
+
+
+
 |接口名|	说明|	请求方式|	返回数据|
 | ------ | ---- | ---- | ---- | ---- | ---- |
 |/knows|	获得所有数据|	GET|	Json|
@@ -62,4 +65,4 @@
 
 #### 数据库内容
 
-![image-20200428175243601](C:\Users\Letme\AppData\Roaming\Typora\typora-user-images\image-20200428175243601.png)
+![](https://github.com/l-toki/react-knowNoted/blob/master/public/sql.png)

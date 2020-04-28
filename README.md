@@ -4,7 +4,7 @@
 
 ![](https://github.com/l-toki/react-knowNoted/blob/master/public/gif1.gif)
 
-
+------------
 
 ![](https://github.com/l-toki/react-knowNoted/blob/master/public/gif2.gif)
 

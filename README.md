@@ -1,68 +1,57 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+# 知识点笔记
 
 ### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<img src="C:\Users\Letme\Desktop\动画.gif" alt="动画" style="zoom:50%;" />
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### 功能模块（具体请看knows.xmind）
 
-### `yarn test`
+- 添加笔记（并且同步到练习中）
+- 修改笔记（并且同步到练习中）
+- 删除笔记（并且同步到练习中）
+- 查看笔记
+- 选择知识点类型，进行练习
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 注意
 
-### `yarn build`
+#### ！当前为第一版本，采用的是useEffect+useState+localstorage
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### ！第二版本正在开发，采用的是useContent+useReducer+useEffect+useState+localstorage(少量)，将大幅度优化代码，提高可读性
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+#### ！第三版本采用的是redux+hooks
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### ！需要自己建设后端接口
 
-### `yarn eject`
+### 接口文档
+|接口名|	说明|	请求方式|	返回数据|
+| ------ | ---- | ---- | ---- | ---- | ---- |
+|/knows|	获得所有数据|	GET|	Json|
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+|接口名|	说明	|请求方式|	返回数据|
+| ------ | ---- | ---- | ---- |
+|/add|	添加知识点|	POST|	Json|
+|参数	|必选|	类型	|说明|
+|type|	Y	|string|	类型|
+|title	|	Y|string	|标题|
+|content|	Y	|string|内容|
+|problem|	N	|Array|	问题|
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+|接口名|	说明	|请求方式|	返回数据|
+| ------ | ---- | ---- | ---- |
+|/delete	|删除知识点|Delete	|Json|
+|参数	|必选|	类型	说明|说明|
+|id|	Y	|String|	ID|
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+|接口名|	说明|	请求方式	|返回数据|
+| ------ | ---- | ---- | ---- |
+|/change	|修改知识点	|Post|	Json|
+|参数|	必选	|类型|	说明|
+|id	|Y	|String|	ID|
+|type| Y |string	|类型|
+|title	| Y |string	|标题|
+|content	| Y |string	|内容|
+|problem	| N |Array|	问题|
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### 数据库内容
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![image-20200428175243601](C:\Users\Letme\AppData\Roaming\Typora\typora-user-images\image-20200428175243601.png)

@@ -44,7 +44,7 @@ export default function Biji(props) {
   //添加知识点
   const addKnowFunc = (values) => {
     if (isEmpty(values.problems)) {
-      values.problems = "没有问题0.0,点击下面的按钮查看知识点";
+      values.problems[0] = "没有问题0.0,点击下面的按钮查看知识点";
     }
     getRequest.addKnows(values,() => {
       message.success("添加成功");

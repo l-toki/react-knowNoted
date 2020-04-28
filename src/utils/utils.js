@@ -82,7 +82,7 @@ export const getRequest = {
         }
       })
       .catch((error) => {
-        message.error("添加失败");
+        message.error("修改失败");
       });
   },
   deleteOneKnow(id, fn,fner) {

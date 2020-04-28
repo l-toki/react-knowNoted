@@ -2,7 +2,15 @@
 
 ### `yarn start`
 
-<img src="C:\Users\Letme\Desktop\动画.gif" alt="动画" style="zoom:50%;" />
+![](https://github.com/l-toki/react-knowNoted/blob/master/public/gif1.gif)
+
+
+
+![](https://github.com/l-toki/react-knowNoted/blob/master/public/gif2.gif)
+
+### BUG
+
+在添加时，虽然动态添加到练习中，可是练习中添加的并不存在ID，当在笔记中修改该值时，会修改成功，可是练习中的值无法修改，因为不存在ID值，这时候不用理他，只要继续下一道，到最后再来一遍时，就会自动从全局中拿到最新的值进行更新。
 
 ### 功能模块（具体请看knows.xmind）
 

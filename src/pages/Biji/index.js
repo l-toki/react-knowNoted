@@ -63,7 +63,7 @@ export default function Biji(props) {
     const id = props.oldData.id;
     //判断问题是否为空
     if (isEmpty(values.problems)) {
-      values.problems = "没有问题0.0,点击下面的按钮查看知识点";
+      values.problems = "没有问题0.0";
     }
     const newKnows = { id, ...values };
     getRequest.changeOneKnow(newKnows,() => {
